@@ -1,0 +1,192 @@
+@import "reset.css";
+
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Song+Myung&display=swap");
+
+body {
+  font-family: "Abel", sans-serif, "Song Myung", serif;
+  background-color: #f3dcd2;
+}
+
+li {
+  margin: 20px 10px;
+}
+
+/* top */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 2px;
+  background-color: rgb(255 206 51);
+  position: relative;
+  font-size: 20px;
+}
+
+.menu-bar__btn {
+  margin-left: 10px;
+}
+.menu-bar__basket {
+  margin-right: 10px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  height: 30px;
+  border-radius: 10px;
+  top: -16px;
+  margin: 0px 10px;
+  box-shadow: 0px 20px 30px 4px rgba(0, 0, 0, 0.13);
+}
+
+.search-bar input {
+  border: none;
+  background-color: none;
+}
+.search-bar i {
+  opacity: 0.5;
+  align-self: center;
+}
+
+/* Today book */
+
+.library_home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.library_home ul li h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.library_today__box {
+  display: flex;
+  justify-content: first baseline;
+  margin: 0px 10px;
+}
+
+.library_today__columnbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.library_today__info {
+  display: flex;
+  align-items: center;
+  margin: 0px 3px;
+}
+.library_today__cover {
+  margin: 0px 10px;
+}
+
+.library_today__cover img {
+  border-radius: 10px;
+  max-width: 100px;
+  max-height: 150px;
+}
+
+.library_today__titrite h2,
+p {
+  max-width: inherit;
+  text-overflow: ellipsis;
+}
+
+.library_home__star i {
+  opacity: 0.3;
+}
+.library_home__star i:nth-child(-n + 3) {
+  opacity: 1;
+  color: rgb(255 206 51);
+}
+
+.library_today__btn input {
+  background-color: #faeec5;
+  border-radius: 3px;
+}
+
+.library_today__action {
+  display: flex;
+}
+
+.library_today__action input {
+  background-color: black;
+  color: snow;
+  border-radius: 3px;
+}
+
+.library_home__bookmark {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255 206 51);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.library_home__bookmark i {
+  align-self: center;
+  color: black;
+}
+
+/* Top book chart */
+
+.library_topgenre__box {
+  display: flex;
+  justify-content: left;
+  overflow: auto;
+  width: 360px;
+}
+
+.library_topgenre__const {
+  margin: 3px 10px;
+}
+
+.library_topgenre__const img {
+  height: 100px;
+}
+
+.library_topgenre__star {
+  display: flex;
+  justify-content: space-around;
+}
+
+.library_topgenre__star i {
+  font-size: 10px;
+  opacity: 0.3;
+  border: #8d786f;
+}
+.library_topgenre__star i:nth-child(-n + 3) {
+  opacity: 1;
+  color: rgb(255 206 51);
+}
+
+/* Popular */
+
+.library_popular__box {
+  display: flex;
+}
+
+.library_popular__box img {
+  width: 30%;
+}
+
+.library_popular__info {
+  margin: 0px 10px;
+}
+.library_popular__info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  overflow: auto;
+}
+.library_popular__info p {
+  font-size: 14px;
+  max-width: 160px;
+  overflow: auto;
+}

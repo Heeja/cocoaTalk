@@ -127,6 +127,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-input:focus {
+input:focus,
+input[type="button"] {
   outline: none;
+  border: none;
+}
+p {
+  opacity: 0.4;
+}
+
+ul div {
+  margin: 3px 0px;
 }
