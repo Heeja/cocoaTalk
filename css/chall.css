@@ -2,7 +2,7 @@ html {
   border: 10px solid #5126ff;
   height: 100vh;
 }
-body {
+@media screen (width: 600) body {
   font-family: "Oswald", sans-serif;
   width: 80%;
 }
@@ -10,23 +10,21 @@ body {
 .header-playlist {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .header-playlist .header-playlist__X {
   display: flex;
-  justify-self: flex-start;
-  align-self: center;
   margin: 0 10px;
+  position: absolute;
 }
 
 .header-playlist .header-playlist__title {
-  display: flex;
-  justify-self: center;
 }
 
 .play-now {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .play-now .play-now__thumbnail {
