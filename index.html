@@ -1,309 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Cocoa Talk Clone in HJ</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:11</span>
+      </div>
+      <div class="status-bar__column">
+        <!-- Icon? -->
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
 
-<head>
-  <link rel="stylesheet" href="css/chall2.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cocoa challenge Day 11</title>
-</head>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to CocoaTalk</h1>
+      <p class="welcome-header__text">
+        If you have a Cocoa Account, log in with your email or phone number.
+      </p>
+    </header>
 
-<body>
-  <header class="menu-bar">
-    <span class="menu-bar__btn"><i class="fa-solid fa-bars"></i></i> </span>
-    <span class="menu-bar__home">
-      <h2>library</h2>
-    </span>
-    <span class="menu-bar__basket">
-      <i class="fa-solid fa-basket-shopping"></i>
-    </span>
-  </header>
+    <form id="login-form" action="friends.html" method="get">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="button" value="Sign Up" />
+      <a href="#">Find Cocoa Account or Password</a>
+    </form>
 
-  <section class="search-bar">
-    <input type="text" placeholder="Search books...">
-    <i class="fa-regular fa-magnifying-glass"></i>
-  </section>
-
-  <section class="library_home">
-    <ul>
-      <li class="library_today">
-        <h2>Book of the day</h2>
-        <div class="library_today__box">
-          <div class="library_today__cover">
-            <img src="http://image.kyobobook.co.kr/images/book/large/510/l9791168340510.jpg" alt="">
-          </div>
-          <div class="library_today__columnbox">
-            <div class="library_today__info">
-              <span class="library_today__titrite">
-                <h2>PACHINKO</h2>
-                <p>이민진 지음</p>
-              </span>
-            </div>
-            <div class="library_today__support">
-              <span class="library_home__star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </span>
-            </div>
-            <div class="library_today__btn">
-              <span>
-                <input type="button" value="Journey">
-                <input type="button" value="Biography">
-              </span>
-            </div>
-            <div class="library_today__action">
-              <span class="library_home__bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </span>
-              <input type="button" value="Book Now">
-            </div>
-          </div>
-        </div>
-      </li>
-      <!-- <li class="library_today">
-        <h2>Top Adventures</h2>
-        <div class="library_today__box">
-          <div class="library_today__cover">
-            <img src="http://image.kyobobook.co.kr/images/book/large/510/l9791168340510.jpg" alt="">
-          </div>
-          <div class="library_today__columnbox">
-            <div class="library_today__info">
-              <span class="library_today__titrite">
-                <h2>The Giver</h2>
-                <p>Lois Lowry 지음</p>
-              </span>
-            </div>
-            <div class="library_today__support">
-              <span class="library_home__star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </span>
-            </div>
-            <div class="library_today__btn">
-              <span>
-                <input type="button" value="Journey">
-                <input type="button" value="Biography">
-              </span>
-            </div>
-            <div class="library_today__action">
-              <span class="library_home__bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </span>
-              <input type="button" value="Book Now">
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="library_today">
-        <h2>Popular authors</h2>
-        <div class="library_today__box">
-          <div class="library_today__cover">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-          </div>
-          <div class="library_today__columnbox">
-            <div class="library_today__info">
-              <span class="library_today__titrite">
-                <h2>On the Edge of the Dark Sea of Darkness</h2>
-                <p>Andrew Peterson</p>
-              </span>
-            </div>
-            <div class="library_today__support">
-              <span class="library_home__star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </span>
-            </div>
-            <div class="library_today__btn">
-              <span>
-                <input type="button" value="Journey">
-                <input type="button" value="Biography">
-              </span>
-            </div>
-            <div class="library_today__action">
-              <span class="library_home__bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </span>
-              <input type="button" value="Book Now">
-            </div>
-          </div>
-        </div>
-      </li> -->
-      <li class="library_topgenre">
-        <div>
-          <h2>Top Adventures</h2>
-        </div>
-        <div class="library_topgenre__box">
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-          <span class="library_topgenre__const">
-            <img src="http://image.kyobobook.co.kr/images/book/large/528/l9791130623528.jpg" alt="">
-            <div class="library_topgenre__star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </span>
-        </div>
-      </li>
-      <li class="library_popular">
-        <h2>Popular authors</h2>
-        <div class="library_popular__box">
-          <img src="http://image.kyobobook.co.kr/images/book/large/502/l9791167740502.jpg" alt="">
-          <span class="library_popular__info">
-            <h3>Because Internet</h3>
-            <p>언어사의 혁명적인 순간을 탐험한다는 것
-              비격식 글쓰기의 폭발
-              언어학자들이 인터넷에 주목하는 이유
-              인간은 언제나 패턴을 만든다
-              효율성, 비격식 문어를 이해하는 첫 번째 기준
-              이미지, 문자의 한계를 뛰어넘는 새로운 규칙</p>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-
-  <script src="https://kit.fontawesome.com/1ab8f5aca5.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/1ab8f5aca5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
