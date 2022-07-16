@@ -1,0 +1,44 @@
+.page1__list__li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0px 10px;
+  position: relative;
+}
+
+.page1__list__li:hover {
+  background-color: antiquewhite;
+}
+
+.page1__list__li_title {
+  position: absolute;
+  left: 60px;
+}
+
+.page1__list__li_img img {
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.page1__list__li_title p,
+h3 {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 5px 10px;
+}
+.page1__list__li_info {
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.5s;
+}
+.page1__list__li_info:hover,
+.page1__list__li_info:active,
+.page1__list__li_info:focus {
+  transform: scale(2);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.page1__list__li:hover {
+  cursor: pointer;
+}

@@ -128,9 +128,11 @@ table {
   border-spacing: 0;
 }
 input:focus,
-input[type="button"] {
+input[type="button"],
+button {
   outline: none;
   border: none;
+  background-color: transparent;
 }
 p {
   opacity: 0.4;

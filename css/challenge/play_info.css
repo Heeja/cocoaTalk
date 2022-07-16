@@ -1,0 +1,18 @@
+.page1__music_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page1__music_info__cover {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.page2__music_info__cover img {
+  border-radius: 30px;
+  width: 240px;
+  height: 240px;
+  box-shadow: 0px 40px 25px -16px #e4cdf7;
+  margin: 40px 0px;
+}
