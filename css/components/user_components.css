@@ -1,5 +1,6 @@
 .user_component {
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .user_component,
@@ -9,8 +10,8 @@
 }
 
 .user_component__avatar {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   border-radius: 28px;
   margin-right: 20px;
 }
@@ -51,4 +52,12 @@
 .user_component__time {
   display: block;
   margin-bottom: 5px;
+}
+
+.screen_header__icon_setting:hover {
+  cursor: pointer;
+}
+
+.screen_header__icon_find:hover {
+  cursor: pointer;
 }

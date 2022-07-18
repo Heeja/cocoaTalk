@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Cocoa Clone</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>11:11</span>
+        </div>
+        <div class="status-bar__column">
+            <!-- Icon? -->
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen_header">
+        <h1 class="screen_header__title">Find</h1>
+        <div class="screen_header__icon">
+            <span class="screen_header__icon_find">
+                <i class="fa-regular fa-magnifying-glass fa-lg"></i>
+            </span>
+            <span class="screen_header__icon_setting">
+                <span class="screen_header__icon_alert">
+                    <i class="fa-solid fa-circle"></i>
+                </span>
+                <i class="fa-regular fa-gear fa-lg"></i>
+            </span>
+        </div>
+    </header>
+
+    <main class="main_screen">
+        <div class="find_icons">
+            <div class="find_icons__icon">
+                <i class="fa-solid fa-qrcode"></i>
+                <span>QR code</span>
+            </div>
+            <div class="find_icons__icon">
+                <i class="fa-regular fa-address-book"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find_icons__icon">
+                <i class="fa-regular fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find_icons__icon">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+        <div class="recommended_friends">
+            <h6 class="recommended_friends__title">Recommanded Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+        <div class="open_chat">
+            <div class="open_chat__header">
+                <h4>Open Chat</h4>
+                <span>
+                    Go to Openchat Home
+                    <i class="fa-regular fa-angle-right fa-sm"></i>
+                </span>
+            </div>
+        </div>
+        <div class="open_post">
+            <div class="open_post_column">
+                <h5 class="open_post__title">#BTS</h5>
+                <h6 class="open_post__hashtag">#bts#army#friends</h6>
+                <div class="open_post__members">
+                    <img
+                        src="https://w.namu.la/s/f5a86e738b2b39a2be841a2e5ce5194efca38ccbf13f110e701f845dad87806a8f192ef6bb19142167973c77df0ede83fabdef109fcdf768244cf494a5a4f9c9be57e37b671f0715257f6798c57c8e25979ee11e55f9b2ac28c982690c4d96c1" />
+                    <span class="open_post__member_count">802 members</span>
+                    <div class="divider"></div>
+                    <span class="open_post__memeber_status">Active</span>
+                </div>
+            </div>
+            <div class="open_post_column">
+                <div class="open_post__photo">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRACc9weMrBiNAnd9O-OZaTdmWnD1f8oz-Bfg&usqp=CAU" />
+                    <div class="open_post__heart_count">
+                        <i class="fa-solid fa-heart"></i><span>3260</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="far fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__notification badge">5</span>
+                    <i class="far fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/1ab8f5aca5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
