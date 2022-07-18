@@ -1,8 +1,0 @@
-.page__nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 20px;
-}
-.page__nav i:hover {
-  cursor: pointer;
-}

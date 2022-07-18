@@ -23,6 +23,7 @@
 .user_component__nick {
   font-weight: 600px;
   font-size: 24px;
+  color: black;
 }
 .user_component__subtitle {
   margin-top: 5px;
@@ -41,5 +42,13 @@
 }
 
 .user_component__column:last-child {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user_component__time {
+  display: block;
+  margin-bottom: 5px;
 }
