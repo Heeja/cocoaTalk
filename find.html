@@ -32,7 +32,7 @@
                 <i class="fa-regular fa-magnifying-glass fa-lg"></i>
             </span>
             <span class="screen_header__icon_setting">
-                <span class="screen_header__icon_alert">
+                <span class="badge_circle">
                     <i class="fa-solid fa-circle"></i>
                 </span>
                 <i class="fa-regular fa-gear fa-lg"></i>
@@ -41,20 +41,20 @@
     </header>
 
     <main class="main_screen">
-        <div class="find_icons">
-            <div class="find_icons__icon">
+        <div class="icon_row">
+            <div class="icon_row__icon">
                 <i class="fa-solid fa-qrcode"></i>
                 <span>QR code</span>
             </div>
-            <div class="find_icons__icon">
+            <div class="icon_row__icon">
                 <i class="fa-regular fa-address-book"></i>
                 <span>Add by Contacts</span>
             </div>
-            <div class="find_icons__icon">
+            <div class="icon_row__icon">
                 <i class="fa-regular fa-fingerprint"></i>
                 <span>Add by ID</span>
             </div>
-            <div class="find_icons__icon">
+            <div class="icon_row__icon">
                 <i class="fa-regular fa-envelope"></i>
                 <span>Invite</span>
             </div>
@@ -89,7 +89,7 @@
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRACc9weMrBiNAnd9O-OZaTdmWnD1f8oz-Bfg&usqp=CAU" />
                     <div class="open_post__heart_count">
-                        <i class="fa-solid fa-heart"></i><span>3260</span>
+                        <i class="fa-solid fa-heart"></i><span>326M</span>
                     </div>
                 </div>
             </div>
@@ -108,16 +108,23 @@
                     <i class="far fa-comment fa-2x"></i>
                 </a>
             </li>
-            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="far fa-magnifying-glass fa-2x"></i></a>
+            <li class="nav__btn"><a class="nav__link" href="find.html">
+                    <i class="far fa-magnifying-glass fa-2x"></i></a>
             </li>
             <li class="nav__btn">
                 <a class="nav__link" href="more.html">
-                    <span class="nav__notification badge">5</span>
+                    <span class="badge_circle">
+                        <i class="fa-solid fa-circle"></i>
+                    </span>
                     <i class="far fa-ellipsis fa-2x"></i>
                 </a>
             </li>
         </ul>
     </nav>
+
+    <div id="no-mobile">
+        <span>Your screen is too big ... ㅠㅠ</span>
+    </div>
 
     <script src="https://kit.fontawesome.com/1ab8f5aca5.js" crossorigin="anonymous"></script>
 </body>

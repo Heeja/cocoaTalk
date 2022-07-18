@@ -141,3 +141,8 @@ p {
 ul div {
   margin: 3px 0px;
 }
+
+a {
+  color: none;
+  border: none;
+}

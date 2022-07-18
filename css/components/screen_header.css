@@ -31,3 +31,16 @@
   width: 60%;
   opacity: 0.5;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen_header__icon .fa-gear:hover {
+  animation: rotateCog 2s linear infinite;
+}

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Cocoa Clone</title>
+    <title>Chats - Cocoa Clone</title>
 </head>
 
 <body>
@@ -26,52 +26,60 @@
     </div>
 
     <header class="screen_header">
-        <h1 class="screen_header__title">Find</h1>
+        <h1 class="screen_header__title">Friends</h1>
         <div class="screen_header__icon">
-            <span class="screen_header__icon_find">
+            <span>
                 <i class="fa-regular fa-magnifying-glass fa-lg"></i>
             </span>
-            <span class="screen_header__icon_setting">
-                <span class="screen_header__icon_alert">
-                    <i class="fa-solid fa-circle"></i>
-                </span>
+            <span>
+                <i class="fa-regular fa-music fa-lg"></i>
+            </span>
+            <span>
+                <i class="far fa-comment-dots fa-lg"></i>
+            </span>
+            <span>
                 <i class="fa-regular fa-gear fa-lg"></i>
             </span>
         </div>
     </header>
 
     <main class="main_screen">
-        <div class="user_component">
-            <div class="user_component__column">
-                <img src="https://w.namu.la/s/b97738f69a57d2e63b4ea10545de22de9316d18977bd92f29c5a667e4a606502a3f0a6b63a07d6956416a389ed451e089972e222828e4c8a56d88c43e83427c4cd77f4f5f8eceb6f1e261ad57054a66cfbedd61751ec208fdc08b0c9c846f65ad9495c20382dcac2d44bd54b26048e21"
-                    class="user_component__avatar">
-                <div class="user_component__text">
-                    <h4 class="user_component__nick">Kang ki young</h4>
-                    <h6 class="user_component__subtitle">
-                        Please check My Cocoa Account Info
-                    </h6>
+        <a href="chat.html">
+            <div class="user_component">
+                <div class="user_component__column">
+                    <img src="https://w.namu.la/s/b97738f69a57d2e63b4ea10545de22de9316d18977bd92f29c5a667e4a606502a3f0a6b63a07d6956416a389ed451e089972e222828e4c8a56d88c43e83427c4cd77f4f5f8eceb6f1e261ad57054a66cfbedd61751ec208fdc08b0c9c846f65ad9495c20382dcac2d44bd54b26048e21"
+                        class="user_component__avatar">
+                    <div class="user_component__text">
+                        <h4 class="user_component__nick">Kang ki young</h4>
+                        <h6 class="user_component__subtitle">
+                            Please check My Cocoa Account Info
+                        </h6>
+                    </div>
+                </div>
+                <div class="user_component__column">
+                    <span class="user_component__time">21:22</span>
+                    <div class="badge">10</div>
                 </div>
             </div>
-            <div class="user_component__column">
-                <span class="user_component__time">21:22</span>
-                <div class="badge">10</div>
-            </div>
-        </div>
-        <div class="user_component">
-            <div class="user_component__column">
-                <img src="http://www.namooactors.com/images/main/a120160/a120160_34.jpg" class="user_component__avatar">
-                <div class="user_component__text">
-                    <h4 class="user_component__nick">park eun bin</h4>
-                    <h6 class="user_component__subtitle">
-                        우영우. 앞으로 말해도 거꾸로 말해도 우영우!
-                    </h6>
+        </a>
+        <a href="chat.html">
+            <div class="user_component">
+                <div class="user_component__column">
+                    <img src="http://ena.skylifetv.co.kr/data/file/skydrama/thumb-2887450690_fS8rcZz9_5f0d35e073343fe0ebb6aae2c5f5891e85164745_200.1x272.jpg"
+                        class="user_component__avatar">
+                    <div class="user_component__text">
+                        <h4 class="user_component__nick">park eun bin</h4>
+                        <h6 class="user_component__subtitle">
+                            우영우. 앞으로 말해도 거꾸로 말해도 우영우!
+                        </h6>
+                    </div>
+                </div>
+                <div class="user_component__column">
+                    <span class="user_component__time">21:22</span>
+                    <div class="badge">2</div>
                 </div>
             </div>
-            <div class="user_component__column">
-                <span class="user_component__time">21:22</span>
-                <div class="badge">2</div>
-            </div>
-        </div>
+        </a>
     </main>
 
     <nav class="nav">
@@ -91,12 +99,18 @@
             </li>
             <li class="nav__btn">
                 <a class="nav__link" href="more.html">
-                    <span class="nav__notification badge">5</span>
+                    <span class="badge_circle">
+                        <i class="fa-solid fa-circle"></i>
+                    </span>
                     <i class="fa-solid fa-ellipsis fa-2x"></i>
                 </a>
             </li>
         </ul>
     </nav>
+
+    <div id="no-mobile">
+        <span>Your screen is too big ... ㅠㅠ</span>
+    </div>
 
     <script src="https://kit.fontawesome.com/1ab8f5aca5.js" crossorigin="anonymous"></script>
 </body>

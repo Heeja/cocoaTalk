@@ -61,3 +61,7 @@
 .screen_header__icon_find:hover {
   cursor: pointer;
 }
+
+.user_component__column:hover {
+  cursor: pointer;
+}
